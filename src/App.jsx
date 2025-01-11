@@ -23,7 +23,7 @@ function App() {
   return (
 
     <div>
-      <img src="/gas_logo.png" alt="Logo Apps Script"></img>
+      <img src="/src/assets/gas_logo.png" alt="Logo Apps Script"></img>
       <h1>AnalIzAdor de proyectos Apps Script</h1>
       <ApiKeyForm onApiKeyChange={handleApiKeyChange} />
       <GithubRepoForm onZipFileChange={handleZipFileChange} />
