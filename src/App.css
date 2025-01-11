@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+img {
+  display: block; /* Para que la imagen ocupe todo el ancho del contenedor */
+  margin-left: auto;
+  margin-right: auto;
+  width:  20%; /* Ajusta el ancho de la imagen si es necesario */
+}
+
+/* Estilos para los formularios */
+form input[type="text"],
+form input[type="password"] {
+  margin-right: 10px; /* Margen derecho de 10px */
+  margin-left: 10px;  /* Margen izquierdo de 10px */
+  margin-bottom: 15px;  /* Margen izquierdo de 10px */
+}
+
+.gemini-response-container {
+  width: 80%; 
+  margin: 20px auto; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  overflow-y: auto; 
+  resize: vertical; 
+  min-height: 100px; 
+  text-align: left; 
+}
+
+.chat-input-container {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.chat-input-container textarea {
+  width: 100%; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 10px; 
+}
+
+.chat-input-container button {
+  padding: 10px 20px; 
+  margin-left: 10px; 
+}
+
+.chat-input-container p {
+  margin-right: 10px; 
+}
+
+.chat-input-container input {
+  flex-grow: 1; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px; 
+}
+
+button {
+  background-color: #007bff; 
+  color: white; 
+  transition: box-shadow 0.3s ease; 
+  font-size: 0.8em; /* Reduce la altura del botón */
+}
+
+button:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+}
+
+.loading-container { /* Puedes usar el nombre de clase que prefieras */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.spinner {
+  margin-top: 10px; /* 10px de margen superior */
+  border: 4px solid #f3f3f3; 
+  border-radius: 50%; 
+  border-top: 4px solid #3498db; 
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
