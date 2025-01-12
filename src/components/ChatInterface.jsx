@@ -85,7 +85,7 @@ function ChatInterface({ apiKey, zipFile }) {
       {showChatInput && (
         <div className="chat-input-container"> 
           <p>¿Qué más quieres saber?</p>
-          <textarea rows="3" value={userInput} onChange={handleInputChange}></textarea>
+          <textarea rows="2" value={userInput} onChange={handleInputChange}></textarea>
           <button onClick={sendMessage}>Enviar</button>
         </div>
       )}
